@@ -1,6 +1,7 @@
 include <../libs/lasercut/lasercut.scad>
 use <../libs/colors.scad>
 
+skim = 0.005; // Used to get rid of the skin on quick renders
 thickness = 3;
 width = 183;
 depth = 122;
@@ -19,10 +20,10 @@ hole_top_left = [hole_size, hole_left, hole_top];
 hole_top_right = [hole_size, hole_right, hole_top];
 
 module bottom_panel() {
-    cutout_connector_width = 26;
+    cutout_connector_width = 26 + skim;
     cutout_connector_depth = 19;
     cutout_connector_bottom = 74;
-    cutout_connector_left = width - cutout_connector_width;
+    cutout_connector_left = width - cutout_connector_width + skim;
 
     cutout_connector = [
         cutout_connector_left,
@@ -47,10 +48,10 @@ module bottom_panel() {
 }
 
 module midplate() {
-    cutout_midplate_width = 117;
+    cutout_midplate_width = 117 + skim;
     cutout_midplate_depth = 83;
     cutout_midplate_bottom = 21;
-    cutout_midplate_left = width - cutout_midplate_width;
+    cutout_midplate_left = width - cutout_midplate_width + skim;
     
     cutout_midplate = [
         cutout_midplate_left,
