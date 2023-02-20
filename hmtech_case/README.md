@@ -4,4 +4,5 @@ A case for the HMTECH 7" Raspberry Pi from [Amazon](https://www.amazon.com/dp/B0
 
 This project is *IN PROGRESS* and not complete
 
+![render](https://raw.githubusercontent.com/pcon/lasercutting/main/hmtech_case/assets/hmtech_case.png)
 ![cutout diagram](https://raw.githubusercontent.com/pcon/lasercutting/main/hmtech_case/assets/hmtech_case.svg)
