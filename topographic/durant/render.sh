@@ -1,0 +1,1 @@
+openscad --camera="180,217.67,-43.52,52.20,0,336.90,745.64" --imgsize="1168,815" --projection=o -o assets/durant.png durant.scad
